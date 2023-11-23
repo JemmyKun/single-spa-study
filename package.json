@@ -1,0 +1,24 @@
+{
+  "name": "single-spa-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel start:*",
+    "all": "npm-run-all --parallel start:*",
+    "start:root-config": "cd ./root-config && pnpm run start",
+    "start:common": "cd ./common && pnpm run start",
+    "start:application": "cd ./application && pnpm run start",
+    "build": "npm-run-all --parallel build:*",
+    "build:root-config": "cd ./root-config && pnpm run build",
+    "build:common": "cd ./common && pnpm run build",
+    "build:application": "cd ./application && pnpm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
